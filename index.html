@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Shopping List</h1>
+        <p>Keep track of your groceries and never forget an item again!</p>
+    </header>
+
+    <section>
+        <form id="add-item-form">
+            <input type="text" id="new-item" placeholder="Add a new item" required>
+            <select id="category">
+                <option value="Fruits">Fruits</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Meat">Meat</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <div id="shopping-list">
+            <div class="category" data-category="Fruits">
+                <h2>Fruits</h2>
+                <ul>
+                    <li><input type="checkbox"> Apples</li>
+                    <li><input type="checkbox"> Bananas</li>
+                    <li><input type="checkbox"> Oranges</li>
+                </ul>
+            </div>
+            <div class="category" data-category="Vegetables">
+                <h2>Vegetables</h2>
+                <ul>
+                    <li><input type="checkbox"> Carrots</li>
+                    <li><input type="checkbox"> Lettuce</li>
+                    <li><input type="checkbox"> Tomatoes</li>
+                </ul>
+            </div>
+            <div class="category" data-category="Dairy">
+                <h2>Dairy</h2>
+                <ul>
+                    <li><input type="checkbox"> Milk</li>
+                    <li><input type="checkbox"> Cheese</li>
+                    <li><input type="checkbox"> Yogurt</li>
+                </ul>
+            </div>
+            <div class="category" data-category="Bakery">
+                <h2>Bakery</h2>
+                <ul>
+                    <li><input type="checkbox"> Bread</li>
+                    <li><input type="checkbox"> Cookies</li>
+                </ul>
+            </div>
+            <div class="category" data-category="Meat">
+                <h2>Meat</h2>
+                <ul>
+                    <li><input type="checkbox"> Chicken</li>
+                    <li><input type="checkbox"> Beef</li>
+                </ul>
+            </div>
+            <div class="category" data-category="Other">
+                <h2>Other</h2>
+                <ul>
+                    <!-- Dynamic items will be added here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Shopping List. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
